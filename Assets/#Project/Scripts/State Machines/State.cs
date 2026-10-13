@@ -1,7 +1,7 @@
 public abstract class State
 {
 
-    private StateMachine stateMachine;
+    protected StateMachine stateMachine;
 
     public void LinkToStateMachine(StateMachine stateMachine)
     {

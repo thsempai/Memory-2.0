@@ -6,7 +6,7 @@ public abstract class StateMachine
     {
         currentState?.Exit();
         currentState = newState;
-        newState.Enter();
+        currentState.Enter();
     }
 
     public void Process()

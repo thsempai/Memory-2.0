@@ -46,3 +46,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameInstancier
   gameManager: {fileID: 596369707171824856, guid: 544e6bf40a859eb42a44ee3660ed6170, type: 3}
   startScreenManager: {fileID: 5801635456356674551, guid: c83d3c44668b87d43ae96421ea8e0222, type: 3}
+  cardPrefab: {fileID: 462783368759889911, guid: 11a02f726f642d44f807819d75d1de9e, type: 3}
+  maxCardsNumber: 24

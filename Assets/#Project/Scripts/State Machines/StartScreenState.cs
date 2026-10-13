@@ -3,9 +3,12 @@ using UnityEngine;
 public class StartScreenState : State
 {
     private StartScreenManager startScreenManager;
-    public StartScreenState(StartScreenManager startScreenManager)
+    private GameManager gameManager;
+
+    public StartScreenState(StartScreenManager startScreenManager, GameManager gameManager)
     {
         this.startScreenManager = startScreenManager;
+        this.gameManager = gameManager;
     }
 
     public override void Enter()
@@ -16,7 +19,10 @@ public class StartScreenState : State
     public override void Process()
     {
         base.Process();
-        Debug.Log("Start");
+        if (gameManager.NumberOfCards > 0)
+        {
+            stateMachine.ChangeState(GameStateMachine.IN_GAME);
+        }
     }
 
     public override void Exit()
